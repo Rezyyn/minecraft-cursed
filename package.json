@@ -1,0 +1,19 @@
+﻿{
+  "name": "curseforge-mod-manager",
+  "version": "1.0.0",
+  "description": "CurseForge API integration for AMP Generic Module - list, search, and download mods",
+  "main": "mod-manager.js",
+  "scripts": {
+    "start": "node mod-manager.js",
+    "test": "node mod-manager.js --list --gameversion=1.20.1 --pagesize=5"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": ["curseforge", "minecraft", "mods", "amp", "api"],
+  "author": "CurseForge Integration Team",
+  "license": "MIT"
+}

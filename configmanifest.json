@@ -1,0 +1,138 @@
+﻿[
+  {
+    "DisplayName": "CurseForge API Key",
+    "Description": "Your CurseForge API key from the developer console. Required for accessing the CurseForge API.",
+    "FieldName": "CurseForgeAPIKey",
+    "Category": "API Configuration",
+    "InputType": "password",
+    "ParamFieldName": "apikey",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "",
+    "Required": true,
+    "Placeholder": "Enter your CurseForge API key"
+  },
+  {
+    "DisplayName": "Game ID",
+    "Description": "The game ID for CurseForge. Default is 432 for Minecraft.",
+    "FieldName": "GameID",
+    "Category": "API Configuration",
+    "InputType": "number",
+    "ParamFieldName": "gameid",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "432",
+    "minValue": "1",
+    "maxValue": "999999",
+    "Required": true
+  },
+  {
+    "DisplayName": "Search Query",
+    "Description": "Free text search in mod names and authors. Leave empty to browse all mods.",
+    "FieldName": "SearchQuery",
+    "Category": "Search Filters",
+    "InputType": "text",
+    "ParamFieldName": "search",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "",
+    "Placeholder": "Enter mod name or author"
+  },
+  {
+    "DisplayName": "Mod Loader Type",
+    "Description": "Filter by mod loader type",
+    "FieldName": "ModLoaderType",
+    "Category": "Search Filters",
+    "InputType": "enum",
+    "ParamFieldName": "modloader",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "0": "Any",
+      "1": "Forge",
+      "2": "Cauldron", 
+      "3": "LiteLoader",
+      "4": "Fabric",
+      "5": "Quilt",
+      "6": "NeoForge"
+    },
+    "DefaultValue": "1"
+  },
+  {
+    "DisplayName": "Game Version",
+    "Description": "Filter by specific game version (e.g., 1.19.2, 1.20.1). Leave empty for all versions.",
+    "FieldName": "GameVersion",
+    "Category": "Search Filters",
+    "InputType": "text",
+    "ParamFieldName": "gameversion",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "",
+    "Placeholder": "e.g., 1.20.1",
+    "SkipIfEmpty": true
+  },
+  {
+    "DisplayName": "Sort Field",
+    "Description": "How to sort the search results",
+    "FieldName": "SortField",
+    "Category": "Search Options",
+    "InputType": "enum",
+    "ParamFieldName": "sortfield",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "1": "Featured",
+      "2": "Popularity", 
+      "3": "Last Updated",
+      "4": "Name",
+      "5": "Author",
+      "6": "Total Downloads"
+    },
+    "DefaultValue": "2"
+  },
+  {
+    "DisplayName": "Results Per Page",
+    "Description": "Number of results to display per page (1-50)",
+    "FieldName": "PageSize",
+    "Category": "Search Options",
+    "InputType": "number",
+    "ParamFieldName": "pagesize",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "20",
+    "minValue": "1",
+    "maxValue": "50"
+  },
+  {
+    "DisplayName": "Auto-Download Mods",
+    "Description": "Automatically download the latest file for each mod found",
+    "FieldName": "AutoDownload",
+    "Category": "Download Options",
+    "InputType": "checkbox",
+    "ParamFieldName": "autodownload",
+    "IncludeInCommandLine": true,
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    },
+    "DefaultValue": "False"
+  },
+  {
+    "DisplayName": "List Mods",
+    "Description": "List and search for mods based on the criteria above",
+    "FieldName": "list_mods",
+    "Category": "Actions",
+    "InputType": "checkbox",
+    "IsFlagArgument": true,
+    "ParamFieldName": "list",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "--list"
+  },
+  {
+    "DisplayName": "Download Specific Mod",
+    "Description": "Download a specific mod by ID",
+    "FieldName": "DownloadModID",
+    "Category": "Actions",
+    "InputType": "number",
+    "ParamFieldName": "download",
+    "IncludeInCommandLine": true,
+    "DefaultValue": "",
+    "minValue": "1",
+    "maxValue": "999999999",
+    "SkipIfEmpty": true,
+    "Placeholder": "Enter mod ID to download"
+  }
+]

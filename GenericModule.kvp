@@ -1,0 +1,67 @@
+﻿# CurseForge Mod Manager Configuration for AMP Generic Module
+# This configuration allows listing, searching, and downloading mods from CurseForge API
+
+# Application Section
+App.DisplayName=CurseForge Mod Manager
+App.RootDir=./curseforge-manager/
+App.WorkingDir=./curseforge-manager/
+App.ExecutableWin=node.exe
+App.ExecutableLinux=node
+App.Compatibility=0
+App.CommandLineArgs=mod-manager.js $$FormattedArgs}}
+App.AppSettings={"CurseForgeAPIKey": "", "GameID": 432, "SearchQuery": "", "CategoryID": "", "ModLoaderType": 1, "GameVersion": "", "SortField": 2, "SortOrder": "desc", "PageSize": 20, "AutoDownload": false, "ModsDirectory": "./mods/"}
+App.EnvironmentVariables={}
+App.CommandLineParameterFormat=--{0}="{1}"
+App.ExitMethod=CtrlC
+App.ExitString=
+App.HasWriteableConsole=True
+App.HasReadableConsole=True
+App.IgnoreSTDOUTAfterRCON=False
+App.ApplicationIPBinding=127.0.0.1
+App.ForceIPBinding=False
+App.SupportsIPv6=False
+App.ExternalIP=
+App.ApplicationPort1=0
+App.ApplicationPort2=0
+App.ApplicationPort3=0
+App.RemoteAdminPort=0
+App.RemoteAdminPassword=
+App.UseRandomAdminPassword=False
+App.AdminLoginTransform=None
+App.MaxUsers=1
+App.AdminMethod=STDIO
+App.UpdateSources=[{"UpdateStageName": "Download Node.js","UpdateSourcePlatform": "All", "UpdateSource": "FetchURL", "UpdateSourceData": "https://nodejs.org/dist/v18.17.1/node-v18.17.1-linux-x64.tar.xz", "UpdateSourceTarget": "./", "UnzipUpdateSource": true, "OverwriteExistingFiles": true}, {"UpdateStageName": "Install Dependencies","UpdateSourcePlatform": "All", "UpdateSource": "Executable", "UpdateSourceData": "npm", "UpdateSourceArgs": "install axios", "SkipOnFailure": true}]
+App.UDPLogger=False
+App.SteamUpdateAnonymousLogin=False
+App.SteamForceWindowsVersion=False
+App.SteamForceLoginPrompt=False
+App.RapidStartup=False
+App.MonitorChildProcessName=
+
+# Console Section - Regex patterns for parsing output
+Console.FilterMatchRegex=
+Console.FilterMatchReplacement=
+Console.AppReadyRegex=^CurseForge Mod Manager completed successfully$
+Console.UserJoinRegex=
+Console.UserLeaveRegex=
+Console.UserChatRegex=
+Console.ThrowawayMessageRegex=
+Console.MetricsRegex=^Stats: (?<ModsFound>\d+) mods found, (?<ModsDownloaded>\d+) downloaded$
+Console.ServerInfoRegex=^API Status: (?<API_Status>[\w\s]+), Rate Limit: (?<Rate_Limit>\d+/\d+)$
+Console.ConnectIPRegex=
+Console.PreConnectRegex=
+
+# Meta Section - Module information
+Meta.DisplayName=CurseForge Mod Manager
+Meta.OS=3
+Meta.AppConfigId=curseforge-mod-manager-001
+Meta.Author=CurseForge Integration Team
+Meta.URL=https://docs.curseforge.com/rest-api/
+Meta.DisplayImageSource=url:https://www.curseforge.com/favicon.ico
+Meta.EndpointURIFormat=
+Meta.ConfigManifest=configmanifest.json
+Meta.MetaConfigManifest=metaconfig.json
+Meta.ConfigRoot=GenericModule.kvp
+Meta.SpecificDockerImage=
+Meta.ExtraContainerPackages=["nodejs", "npm"]
+Meta.ContainerPolicy=SupportedOnLinux
