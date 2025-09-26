@@ -1,8 +1,8 @@
 ﻿{
   "id": "curseforge-mod-manager",
-  "authors": ["CurseForge Integration Team"],
-  "origin": "YOUR-GITHUB-USERNAME/amp-curseforge-manager",
-  "url": "https://github.com/YOUR-GITHUB-USERNAME/amp-curseforge-manager",
+  "authors": ["Justwork"],
+  "origin": "https://github.com/Rezyyn/minecraft-cursed",
+  "url": "https://github.com/Rezyyn/minecraft-cursed",
   "prefix": "CurseForge",
   "shortdescription": "CurseForge API integration for listing, searching, and downloading mods",
   "description": "Complete CurseForge mod manager that integrates with the CurseForge REST API to search, browse, and download mods directly from AMP. Supports filtering by game version, mod loader, categories, and more.",
