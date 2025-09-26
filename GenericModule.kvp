@@ -53,6 +53,7 @@ Console.PreConnectRegex=
 
 # Meta Section - Module information
 Meta.DisplayName=CurseForge Mod Manager
+Meta.Discription=ModMan
 Meta.OS=3
 Meta.AppConfigId=curseforge-mod-manager-001
 Meta.Author=CurseForge Integration Team
